@@ -1,0 +1,61 @@
+```{r}
+# Exercise 1
+sum(2000:20000)
+# The sume of numbers from 2000 to 20000 is 198011000
+```
+
+```{r}
+# Exercise 2
+a <- 5 #assign 5 to the variable 'a'
+b <- 2:20 # assign the numbers from 2 to 20 to the variable 'b'
+a
+b
+```
+
+```{r}
+# Exercise 3
+ab_sum <- sum(a, b)
+ab_sum
+ab_plus <- a + b
+ab_plus
+# The results are different because sum calculates the sum of all numbers in a and b, but plus is add the value of a (which is 5) to every number in the variable b.
+```
+
+```{r}
+# Exercise 4
+sum(b[5:10])
+# The sum is 51
+```
+
+```{r}
+# Exercise 5
+sum(b[c(3, 8, 10)])
+# The sum is 24
+```
+
+```{r}
+# Exercise 6
+m <- matrix(data=1:25,ncol=5,byrow=T)
+m
+m[5,5]
+# ncol specifies the number for columns.
+# byrow specifies that 25 numbers will be filled by row and there are 5 column, which results in 5 rows.
+# m[3, ] extracts the 3rd row from the matrix
+# To extract 3rd, 4th and 5th columns of m
+m[ , 3:5]
+```
+
+```{r}
+# Exercise 7
+cbind(m,101:105)
+#cbind command adds the vector "101:105" to the last column of the m matrix.
+row1 <- c(1, 3, 5, 7, 9)
+n <- rbind(row1, m) #rbind adds to the row, but cbind adds to the column.
+n
+```
+
+```{r}
+# Exercise 8
+#I put the notes in another rmd file.
+```
+
